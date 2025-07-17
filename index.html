@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โรงเรียนตัวอย่าง | โรงเรียนคุณภาพเพื่ออนาคต</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="sticky-header">
+        <div class="container">
+            <a href="#" class="logo">โรงเรียน<span>ตัวอย่าง</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#programs">หลักสูตร</a></li>
+                    <li><a href="#activities">กิจกรรม</a></li>
+                    <li><a href="#news">ข่าวสาร</a></li>
+                    <li><a href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <div class="search-box">
+                    <input type="text" placeholder="ค้นหา...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="#" class="btn btn-primary">สมัครเรียน</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="images/school-video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="typing-animation">ยินดีต้อนรับสู่โรงเรียนตัวอย่าง</h1>
+            <p class="subtitle">สถานที่บ่มเพาะอนาคตของชาติ</p>
+            <a href="#about" class="btn btn-secondary scroll-indicator">
+                ดูเพิ่มเติม <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">เกี่ยวกับโรงเรียน</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="counter" data-count="1250">0</div>
+                    <p>นักเรียน</p>
+                </div>
+                <div class="about-card">
+                    <div class="counter" data-count="85">0</div>
+                    <p>ครูผู้สอน</p>
+                </div>
+                <div class="about-card">
+                    <div class="counter" data-count="15">0</div>
+                    <p>หลักสูตร</p>
+                </div>
+                <div class="about-card">
+                    <div class="counter" data-count="25">0</div>
+                    <p>ปีที่ก่อตั้ง</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section programs-section">
+        <div class="container">
+            <h2 class="section-title">หลักสูตรการศึกษา</h2>
+            <div class="programs-filter">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="primary">ประถมศึกษา</button>
+                <button class="filter-btn" data-filter="secondary">มัธยมศึกษา</button>
+                <button class="filter-btn" data-filter="special">พิเศษ</button>
+            </div>
+            <div class="programs-grid">
+                <!-- Program cards will be added dynamically with JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="section activities-section">
+        <div class="container">
+            <h2 class="section-title">กิจกรรมโรงเรียน</h2>
+            <div class="activities-slider">
+                <!-- Slider items will be added dynamically with JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section news-section">
+        <div class="container">
+            <h2 class="section-title">ข่าวสารและประกาศ</h2>
+            <div class="news-ticker">
+                <div class="ticker-content">
+                    <!-- Ticker items will be added dynamically with JS -->
+                </div>
+            </div>
+            <div class="news-grid">
+                <!-- News cards will be added dynamically with JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">ติดต่อเรา</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>ที่อยู่</h3>
+                        <p>123 ถนนตัวอย่าง แขวงทดลอง เขตทดสอบ กรุงเทพมหานคร 10110</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>โทรศัพท์</h3>
+                        <p>02-123-4567</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>อีเมล</h3>
+                        <p>info@example-school.ac.th</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="ชื่อ-สกุล" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="อีเมล" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="เบอร์โทรศัพท์">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="ข้อความของคุณ" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>เกี่ยวกับโรงเรียน</h3>
+                    <p>โรงเรียนตัวอย่าง ก่อตั้งขึ้นเมื่อปี พ.ศ. 2540 ด้วยปณิธานที่จะพัฒนาการศึกษาไทยให้ทัดเทียมระดับสากล</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>ลิงก์ด่วน</h3>
+                    <ul>
+                        <li><a href="#">ระบบสมัครเรียนออนไลน์</a></li>
+                        <li><a href="#">ตารางเรียน</a></li>
+                        <li><a href="#">ผลงานนักเรียน</a></li>
+                        <li><a href="#">บุคลากร</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>รับข่าวสารจากเรา</h3>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="อีเมลของคุณ" required>
+                        <button type="submit">สมัคร</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 โรงเรียนตัวอย่าง. สงวนลิขสิทธิ์ทุกประการ.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
